@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
+"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/Meme (1).png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="anecdotes.html">Anecdots</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> 
+        </nav>
+        <h1>Contacts</h1>
+    </section>
+       <main>
+        <section class="location">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8aceb111b8014a11eb3ab95a96da25ad4769c87b7841df61ba82f44b7441edfc&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+        </section>
+        <section class="contact-us">
+            <div class="row">
+            <div class="contact-col">
+             <div>
+                <i class="fa-solid fa-house"></i>
+                <span>
+                    <h5>XYZ Road, ABC Building </h5>
+                    <p>Sillicon Valley, USA </p>
+                </span>
+             </div>
+             <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>+778453785478</h5>
+                    <p>Mon to Sun, 9AM to 9PM </p>
+                </span>
+             </div>
+             <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>info@gmail.com</h5>
+                    <p>24/7 </p>
+                </span>
+             </div>
+            </div>
+            <div class=" contact-col">
+            <form>
+                <input type="text" placeholder="Enter name">
+                <input type="text" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your comment"></textarea>
+                <button type="submit" class="btn red-btn">Post Comment</button>
+            </form>
+            </div>
+            </div>
+        </section>
+       </main>
+    <footer>
+        <h4>About us</h4>
+        <p>Our mission is generating funny memes</p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          </div>
+        <p>made with <i class="fa-solid fa-heart"></i></p>
+      </footer>
+      <script>
+      var menu = document.getElementById("navLinks");
+
+      function showMenu() {
+          menu.style.right = '0';
+      }
+
+      function hideMenu() {
+          menu.style.right = '-200px'
+      }
+  </script>    
+</body>
+</html>

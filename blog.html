@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/Meme (1).png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="anecdotes.html">Anecdots</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> 
+        </nav> 
+        <h1>Blog</h1>
+    </section>
+    <main>
+        <section class="blog">
+            <div class="row">
+              <div class="blog-left">
+                <img src="./images/upload-01-pic_32ratio_600x400-600x400-65572.jpg" alt="">
+                <h2>Короткие анекдоты</h2>
+                <p>Раньше я выходил из магазина с полным пакетом еды,а сейчас там стоят камеры</p>
+                <br>
+                <p>Мой друг очень худой.И он однажды пернул и взлетел</p>
+                <br>
+                  <p>Захожу я в класс, потом слышу оттуда:
+                    - Кто спёр мою булочку?
+                    Я говорю:
+                    - Это я спёр.
+                    А мой друг такой: 
+                    - Ляя ты крыса! </p>
+                    <br>
+                    <p>Открываю я такой пак в FC Mobile, потом мне выпадает волкаут и я такой:
+                        - ЕГИПЕТ ПВ, а не, говно </p>
+                        <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form">
+                        <input type="text" placeholder="Enter your name">
+                        <input type="text" placeholder="Enter your email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="btn red-btn"></button>
+                    </form>
+              </div> 
+            </div>
+            <div class="blog-right">
+            <h3>Los pingüinos me la van a mascar </h3>
+            <div>
+                <span>Kawasaki</span>
+                <span>674</span>
+            </div>
+            <div>
+                <span>Cago</span>
+                <span>674</span>
+            </div>
+            <div>
+                <span>Krico</span>
+                <span>674</span>
+            </div>
+            <div>
+                <span>Estriper</span>
+                <span>674</span>
+            </div>
+            </div>
+        </div> 
+        </section>
+    </main> 
+    <footer>
+        <h4>About us</h4>
+        <p>Our mission is generating funny memes</p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          </div>
+        <p>made with <i class="fa-solid fa-heart"></i></p>
+      </footer> 
+      <script>
+        var menu = document.getElementById("navLinks");
+  
+        function showMenu() {
+            menu.style.right = '0';
+        }
+  
+        function hideMenu() {
+            menu.style.right = '-200px'
+        }
+    </script>   
+</body>
+</html>

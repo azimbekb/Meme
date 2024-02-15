@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anecdotes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/Meme (1).png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="anecdotes.html">Anecdots</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> 
+        </nav>
+        <h1>Anecdotes</h1>
+    </section>
+    <main>
+        <section class="anecdotes">
+        <div class="row">
+            <div class=" anecdotes-col">
+            <h3>Два друга</h3>
+            <p>Два друга дрались и у них резко порвались штаны, потом они смотрят друг на друга и говорят:
+                - желтые трусы?
+                - красные трусы?
+                - друг, зачем мы деремся, мы же друзья.
+                Они уходят в закат и один говорит другому:
+                - раньше эти желтые трусы были белыми. </p>
+            </div>
+            <div class="anecdotes-col">
+                <h3>Попугай и питбуль</h3>
+                <p>Грабитель заходит в дом, потом слышит: 
+                    - Иисус тебя видит!
+                    Он оборачивается и никого не видит. Он забил на это и пошел дальше грабить дом, потом он снова слышит:
+                    - Иисус тебя видит!
+                    Оборачивается и снова никого не видит. 
+                    Заходит он в один кабинет и опять слышит:
+                    - Иисус тебя видит!
+                    Оборачивается и видит попугая в клетке. Он говорит:
+                    - Так-то ты чертова птица! Как тебя зовут хоть?
+                    - Иеримия!
+                    - Кто додумался так назвать? 
+                    - Тот человек, который назвал питбуля Ииусом. </p>
+            </div>
+            <div class="anecdotes-col">
+                <h3>Две парилки</h3>
+                <p>Одна парилка говорит другой:
+                    - Ты никчемная, потому что ты общественная. А я - частная!
+                    А вторая говорит:
+                    - Но зато у меня много мужиков. </p>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <h4>About us</h4>
+        <p>Our mission is generating funny memes</p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          </div>
+        <p>made with <i class="fa-solid fa-heart"></i></p>
+      </footer>  
+      <script>
+        var menu = document.getElementById("navLinks");
+  
+        function showMenu() {
+            menu.style.right = '0';
+        }
+  
+        function hideMenu() {
+            menu.style.right = '-200px'
+        }
+    </script> 
+</body>
+</html>
